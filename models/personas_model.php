@@ -9,8 +9,8 @@ class personas_model{
     }
     public function get_personas(){
         $consulta=$this->db->query("select * from personas;");
-        while($filas=$consulta->fetch_assoc()){
-            $this->personas[]=$filas;
+        while($rows=$queries->fetch_assoc()){
+            $this->personas[]=$rows;
         }
         return $this->personas;
     }
